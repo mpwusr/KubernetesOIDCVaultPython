@@ -1,11 +1,11 @@
 
-# 🔐 Kubernetes OIDC Vault Authentication (Python)
+# Kubernetes OIDC Vault Authentication (Python)
 
 This repository demonstrates how a Python application running inside a Kubernetes or OpenShift 4.x cluster can authenticate to **HashiCorp Vault** using a Kubernetes-issued **OIDC JWT token**, and retrieve secrets securely with no hardcoded credentials.
 
 ---
 
-## 📦 What This Project Does
+## What This Project Does
 
 - Reads the OIDC service account token from the pod (`/var/run/secrets/kubernetes.io/serviceaccount/token`)
 - Authenticates with Vault using the JWT/OIDC method
@@ -14,7 +14,7 @@ This repository demonstrates how a Python application running inside a Kubernete
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 
@@ -28,7 +28,7 @@ KubernetesOIDCVaultPython/
 
 ---
 
-## 🛠️ Requirements
+## Requirements
 
 - Python 3.8+
 - HashiCorp Vault (v1.9+)
@@ -39,7 +39,7 @@ KubernetesOIDCVaultPython/
 
 ---
 
-## 🔐 Vault Configuration
+## Vault Configuration
 
 ### Enable JWT auth method:
 
@@ -68,7 +68,7 @@ vault write auth/jwt/role/my-role \
 
 ---
 
-## 💾 Install Dependencies
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -76,7 +76,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Running the App
+## Running the App
 
 Make sure your pod is running with a service account and projected token.
 
@@ -91,7 +91,7 @@ python main.py
 
 ---
 
-## 🔑 Environment Variables
+## Environment Variables
 
 | Variable     | Description                                            |
 | ------------ | ------------------------------------------------------ |
@@ -101,16 +101,16 @@ python main.py
 
 ---
 
-## 📦 Example Output
+## Example Output
 
 ```bash
-🔐 Successfully authenticated with Vault.
-✅ Retrieved secret: {'username': 'admin', 'password': 's3cr3t'}
+Successfully authenticated with Vault.
+Retrieved secret: {'username': 'admin', 'password': 's3cr3t'}
 ```
 
 ---
 
-## 📚 References
+## References
 
 * [Vault JWT Auth Method](https://developer.hashicorp.com/vault/docs/auth/jwt)
 * [Python HVAC (Vault Client)](https://github.com/hvac/hvac)
@@ -118,16 +118,8 @@ python main.py
 
 ---
 
-## 🧠 Author
+## Author
 
 Maintained by [@mpwusr](https://github.com/mpwusr)
 Contributions welcome! Please open an issue or submit a PR.
 
-```
-
----
-
-Would you like me to also provide:
-- A `Dockerfile` for containerizing this app?
-- A Kubernetes `Deployment.yaml` that includes projected token setup?
-```
