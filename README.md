@@ -1,8 +1,4 @@
-Certainly! Below is a complete and professional `README.md` tailored for your repository: [KubernetesOIDCVaultPython](https://github.com/mpwusr/KubernetesOIDCVaultPython). This project demonstrates how to authenticate a Python app running in Kubernetes/OpenShift using OIDC JWT and retrieve secrets from HashiCorp Vault.
 
----
-
-```markdown
 # 🔐 Kubernetes OIDC Vault Authentication (Python)
 
 This repository demonstrates how a Python application running inside a Kubernetes or OpenShift 4.x cluster can authenticate to **HashiCorp Vault** using a Kubernetes-issued **OIDC JWT token**, and retrieve secrets securely with no hardcoded credentials.
